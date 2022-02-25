@@ -1,0 +1,61 @@
+/* - - - - - - - - - - - - - */
+/* STYLE GENERIC APP */
+/* All app proyect generic SRG */
+/* - - - - - - - - - - - - - */
+
+*{
+  margin: 0;
+}
+
+
+/* COLOR APP */
+$background-app: #010101;
+$colorBG: #252f46;
+
+/* SIZE FONT */
+
+
+
+/* CONTAINERS */
+.content-max{
+  max-width: 63.75rem;
+  margin: 0 auto;
+}
+.container-flex{
+  display: flex;
+}
+.end{
+  justify-content: flex-end;
+}
+.center{
+  justify-content: center;
+}
+.between{
+  justify-content: space-between;
+}
+.around{
+  justify-content: space-around;
+}
+
+
+/* SPACING */
+
+
+/* - - - - - - - - - - - - - */
+/* OTHER */
+/* - - - - - - - - - - - - - */
+
+body{
+  background-color: $background-app;
+}
+
+/* BUTTONS */
+.btn-primary {
+  color: #fff;
+  background-color: $colorBG;
+  border-color: #007bff;
+}
+
+/* SPINNER */
+
+

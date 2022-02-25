@@ -1,0 +1,78 @@
+<!-- CONTENT MAX -->
+<div class="content-max">
+
+  <!-- BACKGROUND -->
+  <div class="background-home"></div>
+  <!-- END BACKGROUND -->
+
+
+<!-- CARDS -->
+<div class="row text-center">
+
+  <div *ngFor="let person of personWArs" class="col-sm-12 col-md-4 text-center mb-4 cards">
+    <div class="card container-flex">
+      <div class="card-body">
+        <h5 class="card-title pb-3"> {{person.name}}</h5>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="openModal(person)">
+          Movies participation
+        </button>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- END CARDS -->
+
+<!-- PAGINATION -->
+<nav aria-label="Page navigation example" class="text-center">
+  <ul class="pagination">
+
+    <li class="page-item">
+      <a class="page-link" aria-label="Previous" (click)="previus()">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <div *ngFor="let dummy of ' '.repeat(count).split(''), let x = index">
+      <li class="page-item">
+        <a class="page-link" (click)="pageSelect(x)">{{x ++1}}</a>
+      </li>
+    </div>
+
+
+    <li class="page-item">
+      <a class="page-link" aria-label="Next" (click)="next()">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+
+  </ul>
+</nav>
+<!-- END PAGINATION -->
+
+
+<!-- POPUP -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{modalTitle}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div *ngFor="let film of filmsFilter" class="modal-body text-center">
+        <img [src]="film.url" [alt]="film.name" style="width: 18rem; margin: 1.5rem;">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ENS POPUP -->
+
+
+</div>
+<!-- END CONTENT MAX -->
+
+
+
+

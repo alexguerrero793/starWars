@@ -1,0 +1,39 @@
+
+//*********************
+//HOME STYLING ********
+//*********************
+
+.background-home{
+  background-image: url("https://www.xtrafondos.com/descargar.php?id=3635&resolucion=3840x2160");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.card-body{
+  color: white;
+  background-color: #252f46;
+  border: none;
+}
+
+.pagination{
+  margin: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  @media (max-width: 766px) {
+    width: 100%;
+    margin: 0rem 3rem
+  }
+}
+
